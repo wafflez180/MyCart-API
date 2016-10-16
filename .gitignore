@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+*.ini
+wsgi.py
+MyCartEnv/
+
 # Distribution / packaging
 .Python
 env/

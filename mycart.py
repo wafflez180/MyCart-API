@@ -6,6 +6,8 @@ import json
 app = Flask(__name__)
 mongo = PyMongo(app)
 
+app.debug = True
+
 @app.route('/api/v1/products', methods=['GET'])
 def get_products():
     products = list(mongo.db.products.find())
